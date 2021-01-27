@@ -1,4 +1,8 @@
-let evaluators: {[key: string]: Function} = {
+interface EvalutorFunction {
+    (a: number, b: number): number
+}
+
+let evaluators: {[key: string]: EvalutorFunction} = {
     '/': (a: number, b: number) => (a / b),
     '*': (a: number, b: number) => (a * b),
     '+': (a: number, b: number) => (a + b),
