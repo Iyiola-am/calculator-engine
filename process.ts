@@ -5,7 +5,7 @@ import calculate from "./calculate";
 
 export default function process(input: string): string {
     // Generate the token tree
-    let tokenTree = tokenize(input);
+    let tokenTree = tokenize(input.toLowerCase());
 
 
     // Process the token tree children
