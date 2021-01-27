@@ -20,7 +20,7 @@ export default function tokenize(input: string): RawTokenTree {
         // Get the indexes of the opening and closing brackets.
         let bracketOpenIndex = tree.formattedContent.indexOf('(', startFromIndex);
         let bracketCloseIndex = tree.formattedContent.indexOf(')', startFromIndex + 1);
-        if (bracketCloseIndex == -1) throw new SyntaxError(bracketOpenIndex + 1, 'No corresponding closing bracket was found.');
+        if (bracketCloseIndex == -1) throw new SyntaxError('No corresponding closing bracket was found.');
 
         // Check if there is an open bracket inbetween and start searching from there next time.
         let innerBracketOpenIndex = tree.formattedContent.indexOf('(', bracketOpenIndex + 1);
