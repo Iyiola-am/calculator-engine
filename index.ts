@@ -1,9 +1,14 @@
-import process from './process'
+import processEquation from './process'
 
+console.log('--Calculator Engine--');
+console.log('Enter any BODMAS equation below >>');
 
-let input = '(20 + 4) - ((   36 /6) Of 2      ) - 2'; // 10
-let result = process(input);
-
-
-console.log('Input:', input)
-console.log('Result:', result);
+process.stdin.on('data', (input: Buffer) => {
+    try {
+        let result = processEquation(input.toString());
+        console.log('>', result);
+        console.log('Enter any BODMAS equation below >>');
+    } catch(e) {
+        console.log('Syntax Error!');
+    }
+});
