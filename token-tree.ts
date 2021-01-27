@@ -1,5 +1,6 @@
 export default interface TokenTree {
-    content: string[],
+    parsedContent: string[],
+    formattedContent: string,
     children: {
         [key: number]: TokenTree[]
     }
