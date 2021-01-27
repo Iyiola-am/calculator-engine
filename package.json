@@ -4,11 +4,14 @@
   "description": "Virtual dom app",
   "main": "index.ts",
   "scripts": {
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^14.14.22",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
 }
