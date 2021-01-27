@@ -1,1 +1,1 @@
-export default ['of', '/', '*', '+', '-'];
+export default ['^', 'of', '/', '*', '+', '-'];
