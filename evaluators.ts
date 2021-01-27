@@ -3,7 +3,7 @@ interface EvalutorFunction {
 }
 
 let evaluators: {[key: string]: EvalutorFunction} = {
-    'of': (a: number, b: number) => (a / b),
+    'of': (a: number, b: number) => ((a / b) * 100),
     '/': (a: number, b: number) => (a / b),
     '*': (a: number, b: number) => (a * b),
     '+': (a: number, b: number) => (a + b),
