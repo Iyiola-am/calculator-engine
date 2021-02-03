@@ -1,7 +1,7 @@
 {
-  "name": "virtual-dom",
+  "name": "calculator-engine",
   "version": "1.0.0",
-  "description": "Virtual dom app",
+  "description": "Calculator engine written in typescript.",
   "main": "index.ts",
   "scripts": {
     "start": "ts-node index.ts",
