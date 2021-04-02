@@ -7,7 +7,7 @@
     "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mohammed Adekunle",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.14.22",
